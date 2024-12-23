@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using VsPersonalizedHub_gift.Models;
+using Microsoft.EntityFrameworkCore;
+using V_PersonalizedHub_gift.Models;
 
-namespace VsPersonalizedHub_gift.Data;
+namespace V_PersonalizedHub_gift.Data;
 
 public class AppDbContext : DbContext
 {

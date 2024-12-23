@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace VsPersonalizedHub_gift.Models;
+namespace V_PersonalizedHub_gift.Models;
 
 public class Note
 {
