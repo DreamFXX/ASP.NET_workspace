@@ -1,0 +1,19 @@
+﻿@model @V_PersonalizedHub_gift.Models.Note
+
+<h1>Přidat novou poznámku</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+    </div>
+    <div>
+        <label asp-for="Date"></label>
+        <input asp-for="Date" type="date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Uložit</button>
+</form>
