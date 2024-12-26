@@ -1,6 +1,8 @@
+using MyWebAppDI.Interfaces;
+
 namespace MyWebAppDI.Services;
 
-public class WelcomeService
+public class WelcomeService : IWelcomeService
 {
 
     DateTime _serviceCreated;
