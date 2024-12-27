@@ -1,12 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
 
 namespace LoveNotesApp.Models;
 
 public class Note
 {
     public int Id { get; set; }
-    public string? Title { get; set; }
-    public string? NoteText { get; set; }
-    [DataType(DataType.DateTime)]
-    public DateTime Created { get; set; }
+    public string? Message { get; set; }
+    public DateTime UnlockDate { get; set; }
+    public bool IsUnlocked { get; set; }
 }

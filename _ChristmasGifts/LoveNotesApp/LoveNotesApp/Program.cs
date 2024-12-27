@@ -23,4 +23,6 @@ app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
 
+
+//Rename css in www folder to styles.css
 app.Run();
