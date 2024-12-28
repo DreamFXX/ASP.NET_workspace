@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using LoveNotesApp.Data;
+using LoveNotesApp.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<LoveNotesDbContext>(options => options.UseSqlServer("DefaultCnn"));
 
 var app = builder.Build();
 
