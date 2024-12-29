@@ -24,5 +24,4 @@ namespace RazorPagesMovies.Pages
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }
-
 }

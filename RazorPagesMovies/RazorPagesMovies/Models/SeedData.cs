@@ -14,7 +14,7 @@ public static class SeedData
         {
             if (context == null || context.Movie == null)
             {
-                throw new ArgumentNullException("Null RazorPagesMovieContext");
+                throw new ArgumentNullException("Null AppDbContext");
             }
 
             // Look for any movies.
@@ -26,17 +26,17 @@ public static class SeedData
             context.Movie.AddRange(
                 new Movie
                 {
-                    Title = "When Harry Met Sally",
+                    Title = "Vlk z Wolf Street",
                     ReleaseDate = DateTime.Parse("1989-2-12"),
-                    Genre = "Romantic Comedy",
+                    Genre = "Comedy",
                     Price = 7.99M
                 },
 
                 new Movie
                 {
-                    Title = "Ghostbusters ",
+                    Title = "Ghostbusters",
                     ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
+                    Genre = "Action",
                     Price = 8.99M
                 },
 
@@ -44,7 +44,7 @@ public static class SeedData
                 {
                     Title = "Ghostbusters 2",
                     ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
+                    Genre = "Drama",
                     Price = 9.99M
                 },
 
