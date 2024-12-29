@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RazorPagesMovies.Models;
-using RazorPagesMovies.Data;
 using RazorPagesMovie.Models;
+using RazorPagesMovies.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
+//Seeding Db if empty.
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;

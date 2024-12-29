@@ -1,11 +1,11 @@
 ﻿@page
 @model RazorPagesMovies.Pages.Movies.CreateModel
 
-        @{
-        ViewData["Title"] = "Create";
-        }
-        
-        <h1>Create</h1>
+@{
+    ViewData["Title"] = "Create";
+    }
+
+    <h1>Create</h1>
         
     <h4>Movie</h4>
     <hr />
@@ -32,6 +32,11 @@
                 <label asp-for="Movie.Price" class="control-label"></label>
                 <input asp-for="Movie.Price" class="form-control" />
                 <span asp-validation-for="Movie.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Rating" class="control-label"></label>
+                <input asp-for="Movie.Rating" class="form-control" />
+                <span asp-validation-for="Movie.Rating" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
