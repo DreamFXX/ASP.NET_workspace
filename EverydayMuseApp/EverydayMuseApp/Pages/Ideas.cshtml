@@ -1,0 +1,23 @@
+﻿@page
+@model EverydayMuseApp.Pages.IdeasModel
+
+@{
+    ViewData["Title"] = "Ideas";
+}
+
+<h2>Tvůj inspirační trezor</h2>
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label form="title">Název:</label>
+        <input type="text" id="title" name="title" />
+    </div>
+    <div> 
+        <label for="description">Popis:</label> 
+        <textarea id="description" name="description"></textarea>
+    </div> 
+     <div> 
+        <label for="image">Obrázek:</label> 
+        <input type="file" id="image" name="image" />
+     </div>
+     <button type="submit">Přidat nápad</button>
+</form>
