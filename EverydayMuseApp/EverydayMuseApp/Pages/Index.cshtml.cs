@@ -1,18 +1,9 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace EverydayMuseApp.Pages
+namespace EverydayMuseApp.Pages;
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
+    public void OnGet()
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-        }
     }
 }
