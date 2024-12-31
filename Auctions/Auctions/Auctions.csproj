@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Auctions-d40b760f-3e8b-4826-815f-30ae40c97070</UserSecretsId>
+    <UserSecretsId>aspnet-Auctions-8670e01c-0971-4c50-87b8-f48a3cb8def5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
