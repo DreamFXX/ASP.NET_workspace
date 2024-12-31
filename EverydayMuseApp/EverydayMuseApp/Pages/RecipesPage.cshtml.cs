@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EverydayMuse.Pages
 {
-    public class WorkoutLogModel : PageModel
+    public class RecipeBookModel : PageModel
     {
         [BindProperty]
-        public string Exercise { get; set; }
+        public string RecipeName { get; set; }
         [BindProperty]
-        public string Date { get; set; }
+        public string Ingredients { get; set; }
         [BindProperty]
-        public string Notes { get; set; }
+        public string Instructions { get; set; }
 
         public void OnGet()
         {
@@ -19,9 +19,9 @@ namespace EverydayMuse.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Zde mùžeš pøidat kód pro uložení informací o cvièení do databáze nebo jiného úložištì
+            // Zde mùžeš pøidat kód pro uložení informací o receptu do databáze nebo jiného úložištì
 
-            return RedirectToPage("/WorkoutLog");
+            return RedirectToPage("/RecipeBook");
         }
     }
 }
