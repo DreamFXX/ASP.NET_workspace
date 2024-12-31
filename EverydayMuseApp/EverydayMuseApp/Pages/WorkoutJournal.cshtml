@@ -1,0 +1,23 @@
+﻿@page
+@model EverydayMuseApp.Pages.WorkoutJournalModel
+@{
+    @ViewData["Title"] = "Workout Journal";
+}
+
+<h2>Cvičební deník</h2>
+<form method="post">
+    <div> 
+        <label for="exercise">Cvičení:</label>
+        <input type="text" id="exercise" name="exercise" />
+    </div>
+    <div>
+        <label for="date">Datum:</label> 
+        <input type="date" id="date" name="date" />
+    </div>
+    <div>
+        <label for="notes">Poznámky:</label>
+        <textarea id="notes" name="notes"></textarea>
+    </div>
+
+    <button type="submit">Přidat záznam</button> 
+</form>
